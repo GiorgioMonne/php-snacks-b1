@@ -59,6 +59,8 @@
         ]
     ];
 
+    $accesso = "accesso riuscito";
+    $negato = "accesso negato";
     
 ?>
 
@@ -91,11 +93,11 @@
    
         if( strlen($_GET("name") > 3 && is_int($_GET("age" && strpos($_GET['mail'], '@') !== false && strpos($_GET['mail'], '.') !== false)){
 
-            echo "Accesso riuscito";
+            echo $accesso;
 
         }else 
         {
-           echo "Accesso negato" 
+           echo $negato; 
         }
     }
 
