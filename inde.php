@@ -78,10 +78,7 @@
 
         <?php for($i =0; $i < count($partite); $i++){
 
-                echo "<li>  {$partite["$i"]["sCasa"]} </li>";
-                echo "<li>  {$partite["$i"]["sOspite"]} </li>";
-                echo "<li>  {$partite["$i"]["pCasa"]} </li>";
-                echo "<li>  {$partite["$i"]["pOspite"]} </li>";
+                echo "<li>  {$partite[$i]["sCasa"]} - {$partite[$i]["sOspite"]} | {$partite[$i]["pCasa"]} - {$partite[$i]["pOspite"]} </li>";
             } 
         ?>
 
