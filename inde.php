@@ -59,6 +59,7 @@
         ]
     ];
 
+    
 ?>
 
 
@@ -83,6 +84,23 @@
         ?>
 
     </ul>
+
+    <h2>Correzzione nomi</h2>
+
+    <?php
+   
+        if( strlen($_GET("name") > 3 && is_int($_GET("age" && strpos($_GET['mail'], '@') !== false && strpos($_GET['mail'], '.') !== false)){
+
+            echo "Accesso riuscito";
+
+        }else 
+        {
+           echo "Accesso negato" 
+        }
+    }
+
+    ?>
+
     
 </body>
 </html>
