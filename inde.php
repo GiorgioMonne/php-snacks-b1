@@ -91,15 +91,17 @@
 
     <?php
    
-        if( strlen($_GET("name") > 3 && is_int($_GET("age" && strpos($_GET['mail'], '@') !== false && strpos($_GET['mail'], '.') !== false)){
+        if( strlen($_GET["name"]) > 3 && is_numeric($_GET["age"]) && strpos($_GET['mail'], '@') !== false && strpos($_GET['mail'], '.') !== false){
 
             echo $accesso;
+            // echo 'accesso consentito';
 
         }else 
         {
-           echo $negato; 
+           echo $negato;
+        //    echo 'accesso negato'; 
         }
-    }
+    
 
     ?>
 
